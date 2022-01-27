@@ -16,7 +16,7 @@ class CreateSongsTable extends Migration
         Schema::create('songs', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('artist');
+            $table->string('genre');
             $table->string('features')->nullable();
             $table->boolean('single')->default(false);
             $table->text('lyrics')->nullable();

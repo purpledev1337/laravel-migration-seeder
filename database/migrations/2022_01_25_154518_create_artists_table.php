@@ -19,8 +19,7 @@ class CreateArtistsTable extends Migration
             $table->string('name');
             $table->string('surname');
             $table->date('date_of_birth');
-            $table->string('band_actual')->nullable();
-            $table->string('band_all')->nullable();
+            $table->string('band')->nullable();
             $table->string('thumb_path')->nullable();
             $table->timestamps();
         });
